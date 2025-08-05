@@ -6,7 +6,7 @@
 /*   By: vgursoy <vgursoy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 11:35:15 by vgursoy           #+#    #+#             */
-/*   Updated: 2025/08/05 15:07:01 by vgursoy          ###   ########.fr       */
+/*   Updated: 2025/08/05 16:57:15 by vgursoy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_putchar(char a);
 int	ft_putstr(char *str);
 int	ft_putnbr(int n);
 int	ft_putunbr(unsigned int n);
-int	ft_puthex(long n, char *base);
+int	ft_puthex(unsigned long n, char *base);
 int	ft_putptr(void *ptr);
 
 #endif

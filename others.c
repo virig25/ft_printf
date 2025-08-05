@@ -6,7 +6,7 @@
 /*   By: vgursoy <vgursoy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 11:28:10 by vgursoy           #+#    #+#             */
-/*   Updated: 2025/08/05 15:04:34 by vgursoy          ###   ########.fr       */
+/*   Updated: 2025/08/05 16:56:58 by vgursoy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,13 +70,12 @@ int	ft_putptr(void *ptr)
 	count = 0;
 	if (!ptr)
 		return (write(1, "(nil)", 5));
-	count = 0;
 	count += write(1, "0x", 2);
-	count += ft_puthex((long)ptr, HEX_DOWN);
+	count += ft_puthex((unsigned long)ptr, HEX_DOWN);
 	return (count);
 }
 
-int	ft_puthex(long n, char *base)
+int	ft_puthex(unsigned long n, char *base)
 {	
 	int	count;
 
