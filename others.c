@@ -6,7 +6,7 @@
 /*   By: vgursoy <vgursoy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 11:28:10 by vgursoy           #+#    #+#             */
-/*   Updated: 2025/08/04 11:34:45 by vgursoy          ###   ########.fr       */
+/*   Updated: 2025/08/05 15:04:34 by vgursoy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_putstr(char *str)
 	count = 0;
 	if (!str)
 		return (ft_putstr("(null)"));
-	while (str)
+	while (*str)
 	{
 		count += ft_putchar(*str);
 		str++;

@@ -6,7 +6,7 @@
 /*   By: vgursoy <vgursoy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 11:21:43 by vgursoy           #+#    #+#             */
-/*   Updated: 2025/08/04 11:27:35 by vgursoy          ###   ########.fr       */
+/*   Updated: 2025/08/05 15:06:32 by vgursoy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_putchar(char a)
 	return (1);
 }
 
-static int	ft_control(char s, va_list args)
+int	ft_control(char s, va_list args)
 {	
 	int	count;
 
@@ -31,8 +31,10 @@ static int	ft_control(char s, va_list args)
 		count += ft_putstr(va_arg(args, char *));
 	else if (s == 'd' || s == 'i')
 		count += ft_putnbr(va_arg(args, int));
-	else if (s == 'x' || s == 'X')
+	else if (s == 'x')
 		count += ft_puthex(va_arg(args, long), HEX_DOWN);
+	else if (s == 'X')
+		count += ft_puthex(va_arg(args, long), HEX_UPP);
 	else if (s == 'p')
 		count += ft_putptr(va_arg(args, void *));
 	else if (s == 'u')
