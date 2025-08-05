@@ -1,18 +1,30 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vgursoy <vgursoy@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/08/04 11:35:15 by vgursoy           #+#    #+#             */
+/*   Updated: 2025/08/04 11:38:35 by vgursoy          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FT_PRINTF_H
-#define FT_PRINTF_H
-#include <stdarg.h>
-#include <unistd.h>
+# define FT_PRINTF_H
+# include <stdarg.h>
+# include <unistd.h>
 
 # define HEX_UPP "0123456789ABCDEF"
 # define HEX_DOWN "0123456789abcdef"
 
-int	ft_printf(const char *format, ...);
-static int ft_control(char s, va_list args);
-int ft_putchar(char a);
-int ft_putstr(char *str);
-int ft_putnbr(int n);
-int ft_putunbr(unsigned int n);
-int ft_puthex (long n, char *base);
-int ft_putptr (void *ptr);
+int			ft_printf(const char *format, ...);
+static int	ft_control(char s, va_list args);
+int			ft_putchar(char a);
+int			ft_putstr(char *str);
+int			ft_putnbr(int n);
+int			ft_putunbr(unsigned int n);
+int			ft_puthex(long n, char *base);
+int			ft_putptr(void *ptr);
 
 #endif
