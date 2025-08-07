@@ -6,7 +6,7 @@
 /*   By: vgursoy <vgursoy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 11:21:43 by vgursoy           #+#    #+#             */
-/*   Updated: 2025/08/05 15:06:32 by vgursoy          ###   ########.fr       */
+/*   Updated: 2025/08/07 13:56:49 by vgursoy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_putchar(char a)
 }
 
 int	ft_control(char s, va_list args)
-{	
+{
 	int	count;
 
 	count = 0;
